@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/Users/dario\x2esalvati\x40igenius\x2eai/\x2edocker/bin\x1e/Users/dario\x2esalvati\x40igenius\x2eai/\x2elocal/bin\x1e/Users/dario\x2esalvati\x40igenius\x2eai/\x2envm/versions/node/v22\x2e19\x2e0/bin\x1e/opt/homebrew/bin
