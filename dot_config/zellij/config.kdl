@@ -188,21 +188,6 @@ keybinds clear-defaults=true {
     }
 }
 
-themes {
-    onedark-warmer {
-        fg "#A7AAB0"
-        bg "#232326"
-        black "#1B1C1E"
-        red "#DE5D68"
-        green "#8FB573"
-        yellow "#DBB671"
-        blue "#57A5E5"
-        magenta "#BB70D2"
-        orange "#C49060"
-        cyan "#51A8B3"
-        white "#818387"
-    }
-}
 
 // Plugin aliases - can be used to change the implementation of Zellij
 // changing these requires a restart to take effect
@@ -242,7 +227,22 @@ simplified_ui true
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "onedark-warmer"
+themes {
+ kanagawa-dragon {
+    fg      "#c5c9c5"
+    bg      "#2d4f67"
+    black   "#0d0c0c"
+    red     "#c4746e"
+    green   "#2d4f67"
+    yellow  "#49443c"
+    blue    "#393836"
+    magenta "#c5c9c5"
+    cyan    "#8ba4b0"
+    white   "#c5c9c5"
+    orange  "#b6927b"
+} 
+}
+theme "kanagawa-dragon"
  
 // Choose the base input mode of zellij.
 // Default: normal

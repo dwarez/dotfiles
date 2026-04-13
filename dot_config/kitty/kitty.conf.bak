@@ -1,6 +1,10 @@
+term xterm-256color
+allow_remote_control yes
+map ctrl+v paste_from_clipboard
+
 # Font
 font_family      JetBrains Mono Nerd Font
-font_size 11.0
+font_size 11
 
 # Cursor
 cursor_shape beam
@@ -15,8 +19,33 @@ confirm_os_window_close 0
 # Use fish shell
 shell fish
 
+# split like tmux 
+# Prefix-style not really possible in kitty, use direct binds
+map ctrl+space>% launch --location=vsplit --cwd=current
+map ctrl+space>minus launch --location=hsplit --cwd=current
+window_padding_width 0
+window_margin_width 0
+
+# renaming
+map ctrl+space>comma set_tab_title
+
+# Navigation (vim style)
+map ctrl+space>h neighboring_window left
+map ctrl+space>j neighboring_window down
+map ctrl+space>k neighboring_window up
+map ctrl+space>l neighboring_window right
+
+# Windows (tabs in kitty)
+map shift+left previous_tab
+map shift+right next_tab
+map alt+h previous_tab
+map alt+l next_tab
+map ctrl+space>c new_tab_with_cwd
+
 # Copy
 map ctrl+c    copy_or_interrupt
+clipboard_control write-clipboard write-primary read-clipboard-ask read-primary-ask
+
 
 # Search
 map ctrl+f   launch --location=hsplit --allow-remote-control kitty +kitten search.py @active-kitty-window-id
@@ -37,6 +66,16 @@ map ctrl+kp_0 change_font_size all 0
 
 
 # BEGIN_KITTY_THEME
-# One Dark
+# Kanagawa
 include current-theme.conf
 # END_KITTY_THEME
+#
+# # Set up the tab bar
+tab_bar_min_tabs            1
+tab_bar_edge                top
+tab_bar_style               powerline
+tab_powerline_style         round
+tab_title_template          {title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}
+# Set up the background
+# Set up the window margin
+window_margin_width 8
