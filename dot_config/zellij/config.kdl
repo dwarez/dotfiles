@@ -228,19 +228,19 @@ simplified_ui true
 // Default: default
 // 
 themes {
- kanagawa-dragon {
-    fg      "#c5c9c5"
-    bg      "#2d4f67"
-    black   "#0d0c0c"
-    red     "#c4746e"
-    green   "#2d4f67"
-    yellow  "#49443c"
-    blue    "#393836"
-    magenta "#c5c9c5"
-    cyan    "#8ba4b0"
-    white   "#c5c9c5"
-    orange  "#b6927b"
-} 
+    kanagawa-dragon {
+        fg      "#c5c9c5"
+        bg      "#2d4f67"
+        black   "#0d0c0c"
+        red     "#c4746e"
+        green   "#2d4f67"
+        yellow  "#49443c"
+        blue    "#393836"
+        magenta "#c5c9c5"
+        cyan    "#8ba4b0"
+        white   "#c5c9c5"
+        orange  "#b6927b"
+    }
 }
 theme "kanagawa-dragon"
  

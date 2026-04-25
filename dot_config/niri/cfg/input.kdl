@@ -4,9 +4,8 @@
 input {
     keyboard {
         xkb {
-            //If you want to overwrite your keyboard layout,
-            // uncomment the line below and change the layout accordingly.
-            //layout "us" // Use the American keyboard layout
+            layout "us"
+            variant "altgr-intl" // US International, AltGr dead keys (no regular dead keys)
         }
         numlock // Enable numlock on startup
     }
@@ -14,13 +13,6 @@ input {
     touchpad {
         tap // Enable tap-to-click
         natural-scroll // Enable natural (macOS-style) scrolling
-    }
-
-    mouse {
-        // If you want to disable Mouse Acceleration,
-        // uncomment the lines below.
-        //accel-profile "flat"
-        //accel-speed 0.0
     }
 
     focus-follows-mouse // Automatically focus windows under the mouse pointer
