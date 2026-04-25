@@ -625,10 +625,6 @@
             },
             {
                 "enabled": true,
-                "id": "zathura"
-            },
-            {
-                "enabled": true,
                 "id": "fuzzel"
             },
             {
@@ -637,7 +633,7 @@
             },
             {
                 "enabled": true,
-                "id": "code"
+                "id": "nvim-base16"
             }
         ],
         "enableUserTheming": true
