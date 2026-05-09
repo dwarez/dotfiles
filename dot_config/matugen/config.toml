@@ -1,0 +1,21 @@
+# Matugen standalone config (used on macOS; harmless on Linux where noctalia
+# drives template generation directly).
+#
+# Run with:  matugen image /path/to/wallpaper.jpg
+# Or via the helper:  ~/.config/matugen/apply-theme.sh /path/to/wallpaper.jpg
+
+[config]
+# Default scheme — matches noctalia's "content"-style generation.
+default_scheme = "scheme-content"
+
+# ── tmux ─────────────────────────────────────────────────────
+[templates.tmux]
+input_path = "~/.config/tmux/matugen-template.conf"
+output_path = "~/.config/tmux/matugen.conf"
+post_hook = "tmux source-file ~/.config/tmux/tmux.conf 2>/dev/null || true"
+
+# ── nvim (base16) ────────────────────────────────────────────
+[templates.nvim-base16]
+input_path = "~/.config/nvim/lua/matugen-template.lua"
+output_path = "~/.config/nvim/lua/matugen.lua"
+post_hook = "pkill -SIGUSR1 nvim 2>/dev/null || true"

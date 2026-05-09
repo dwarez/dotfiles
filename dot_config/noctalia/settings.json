@@ -634,6 +634,14 @@
             {
                 "enabled": true,
                 "id": "nvim-base16"
+            },
+            {
+                "enabled": true,
+                "id": "starship"
+            },
+            {
+                "enabled": true,
+                "id": "tmux"
             }
         ],
         "enableUserTheming": true
@@ -654,7 +662,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/ranxom/Pictures/Wallpapers",
+        "directory": "/home/dwarez/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
