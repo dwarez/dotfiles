@@ -1,0 +1,21 @@
+# chezmoi ignore rules. Templated by OS — paths listed under a block are
+# excluded when that OS condition is true.
+#
+# Paths are relative to $HOME (target paths), not source paths.
+# Pattern syntax is gitignore-style.
+
+# ── Linux-only (Wayland/X11 stack) — skip on macOS ─────────────────
+{{- if ne .chezmoi.os "linux" }}
+.config/hypr
+.config/niri
+.config/noctalia
+.config/albert
+{{- end }}
+
+# ── macOS-only — skip on Linux ─────────────────────────────────────
+{{- if ne .chezmoi.os "darwin" }}
+# Add macOS-specific paths here as you create them, e.g.:
+# .config/karabiner
+# Library/Application Support/...
+# Brewfile
+{{- end }}
