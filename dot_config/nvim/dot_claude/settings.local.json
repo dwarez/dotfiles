@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.qu8n.com)",
+      "WebFetch(domain:echasnovski.com)",
+      "Bash(mkdir -p ~/.config/nvim012/lua/plugins)",
+      "Read(//home/dwarez/.config/**)",
+      "Bash(pacman -Ss tree-sitter-cli)",
+      "Bash(command -v npm cargo)",
+      "WebFetch(domain:neovim.io)"
+    ]
+  }
+}
