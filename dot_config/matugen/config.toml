@@ -14,11 +14,8 @@ input_path = "~/.config/tmux/matugen-template.conf"
 output_path = "~/.config/tmux/matugen.conf"
 post_hook = "tmux source-file ~/.config/tmux/tmux.conf 2>/dev/null || true"
 
-# ── nvim (base16) ────────────────────────────────────────────
-[templates.nvim-base16]
-input_path = "~/.config/nvim/lua/matugen-template.lua"
-output_path = "~/.config/nvim/lua/matugen.lua"
-post_hook = "pkill -SIGUSR1 nvim 2>/dev/null || true"
+# nvim uses a static colorscheme (One Dark Pro), not matugen — intentionally
+# left out so the editor keeps fully saturated, distinguishable syntax colours.
 
 # ── kitty (hybrid: matugen surfaces/accents, Kanagawa ANSI) ──
 [templates.kitty]
