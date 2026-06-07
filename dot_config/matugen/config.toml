@@ -19,3 +19,15 @@ post_hook = "tmux source-file ~/.config/tmux/tmux.conf 2>/dev/null || true"
 input_path = "~/.config/nvim/lua/matugen-template.lua"
 output_path = "~/.config/nvim/lua/matugen.lua"
 post_hook = "pkill -SIGUSR1 nvim 2>/dev/null || true"
+
+# ── kitty (hybrid: matugen surfaces/accents, Kanagawa ANSI) ──
+[templates.kitty]
+input_path = "~/.config/kitty/matugen-template.conf"
+output_path = "~/.config/kitty/current-theme.conf"
+# kitty live-reloads its config (and colours) on SIGUSR1 — no remote control needed.
+post_hook = "pkill -SIGUSR1 -x kitty 2>/dev/null || true"
+
+# ── starship prompt ──────────────────────────────────────────
+[templates.starship]
+input_path = "~/.config/starship/matugen-template.toml"
+output_path = "~/.config/starship.toml"

@@ -24,11 +24,17 @@ if [[ ! -f "$wallpaper" ]]; then
 fi
 
 if ! command -v matugen >/dev/null 2>&1; then
-  echo "matugen not found. Install with: brew install matugen" >&2
+  echo "matugen not found. Install with: cargo install matugen" >&2
   exit 1
 fi
 
-matugen image "$wallpaper"
+# On macOS matugen looks for its config under ~/Library/Application Support,
+# not ~/.config, so point at the config explicitly.
+config="$HOME/.config/matugen/config.toml"
+
+# matugen v4 needs a preference when an image yields multiple source colours.
+# "saturation" picks the most vivid accent. Override with MATUGEN_PREFER.
+matugen -c "$config" image "$wallpaper" --prefer "${MATUGEN_PREFER:-saturation}"
 
 # Optional: set macOS desktop wallpaper too.
 if [[ "$(uname)" == "Darwin" ]] && [[ "${SET_WALLPAPER:-0}" == "1" ]]; then
