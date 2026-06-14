@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Pre-commit secret scan for the chezmoi dotfiles repo.
+# Blocks commits whose staged changes contain secrets.
+# Bypass (only for confirmed false positives): git commit --no-verify
+set -uo pipefail
+
+# Preferred: gitleaks (comprehensive rule set).
+if command -v gitleaks >/dev/null 2>&1; then
+  if ! gitleaks git --staged --pre-commit --redact --no-banner --verbose; then
+    echo "" >&2
+    echo "✖ gitleaks detected a potential secret in staged changes — commit blocked." >&2
+    echo "  Put secrets in a git-ignored file (e.g. ~/.config/fish/conf.d/secrets.fish)." >&2
+    echo "  If it is a genuine false positive: git commit --no-verify" >&2
+    exit 1
+  fi
+  exit 0
+fi
+
+# Fallback when gitleaks is not installed: lightweight regex scan of staged diff.
+echo "⚠ gitleaks not found — using basic regex fallback (brew install gitleaks for full coverage)." >&2
+pattern='hf_[A-Za-z0-9]{30,}|AKIA[0-9A-Z]{16}|ASIA[0-9A-Z]{16}|aws_secret_access_key[[:space:]]*=|-----BEGIN[[:space:]]+[A-Z ]*PRIVATE KEY-----|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|xox[baprs]-[A-Za-z0-9-]+|sk-[A-Za-z0-9]{20,}'
+if git diff --cached -U0 --no-color | grep -nEq "$pattern"; then
+  echo "✖ Possible secret detected in staged changes — commit blocked:" >&2
+  git diff --cached -U0 --no-color | grep -nE "$pattern" | sed -E 's/(.{14}).*/\1…(redacted)/' | sed 's/^/    /' >&2
+  echo "  Bypass only if false positive: git commit --no-verify" >&2
+  exit 1
+fi
+exit 0

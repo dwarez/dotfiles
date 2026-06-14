@@ -1,0 +1,21 @@
+title = "chezmoi dotfiles — gitleaks config"
+
+# Keep all of gitleaks' built-in rules, then add our own.
+[extend]
+useDefault = true
+
+# Hugging Face tokens can contain digits; the built-in rule only matches
+# letters. This catches the full alphanumeric form (hf_... / api_org_...).
+[[rules]]
+id = "huggingface-token-alnum"
+description = "Hugging Face access token (alphanumeric)"
+keywords = ["hf_", "api_org_"]
+regex = '''\b((?:hf_|api_org_)[a-zA-Z0-9]{30,})\b'''
+
+# The scanner's own files legitimately contain secret-shaped regex patterns.
+[allowlist]
+description = "Scanner config / hook files"
+paths = [
+  '''\.gitleaks\.toml''',
+  '''\.githooks/pre-commit''',
+]
