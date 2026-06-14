@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Enable the dotfiles repo's tracked git hooks (secret-scanning pre-commit).
+# Runs once via `chezmoi apply` so a freshly cloned machine is protected too.
+set -euo pipefail
+
+repo={{ .chezmoi.sourceDir | quote }}
+
+if git -C "$repo" rev-parse --git-dir >/dev/null 2>&1; then
+  git -C "$repo" config core.hooksPath .githooks
+  echo "chezmoi: enabled git hooks (core.hooksPath=.githooks) in $repo"
+  command -v gitleaks >/dev/null 2>&1 || \
+    echo "  note: 'gitleaks' not installed — 'brew install gitleaks' for full coverage (regex fallback active meanwhile)."
+fi
