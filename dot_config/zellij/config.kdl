@@ -228,21 +228,126 @@ simplified_ui true
 // Default: default
 // 
 themes {
-    kanagawa-dragon {
-        fg      "#c5c9c5"
-        bg      "#2d4f67"
-        black   "#0d0c0c"
-        red     "#c4746e"
-        green   "#2d4f67"
-        yellow  "#49443c"
-        blue    "#393836"
-        magenta "#c5c9c5"
-        cyan    "#8ba4b0"
-        white   "#c5c9c5"
-        orange  "#b6927b"
+    onedark-warmer {
+        text_unselected {
+            base 167 170 176
+            background 35 35 38
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
+        }
+        text_selected {
+            base 35 35 38
+            background 143 181 115
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
+        }
+        ribbon_selected {
+            base 35 35 38
+            background 143 181 115
+            emphasis_0 222 93 104
+            emphasis_1 196 144 96
+            emphasis_2 187 112 210
+            emphasis_3 87 165 229
+        }
+        ribbon_unselected {
+            base 35 35 38
+            background 167 170 176
+            emphasis_0 222 93 104
+            emphasis_1 167 170 176
+            emphasis_2 87 165 229
+            emphasis_3 187 112 210
+        }
+        table_title {
+            base 143 181 115
+            background 0
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
+        }
+        table_cell_selected {
+            base 35 35 38
+            background 143 181 115
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
+        }
+        table_cell_unselected {
+            base 167 170 176
+            background 35 35 38
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
+        }
+        list_selected {
+            base 35 35 38
+            background 143 181 115
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
+        }
+        list_unselected {
+            base 167 170 176
+            background 35 35 38
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
+        }
+        frame_selected {
+            base 143 181 115
+            background 0
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 187 112 210
+            emphasis_3 0
+        }
+        frame_highlight {
+            base 196 144 96
+            background 0
+            emphasis_0 187 112 210
+            emphasis_1 196 144 96
+            emphasis_2 196 144 96
+            emphasis_3 196 144 96
+        }
+        exit_code_success {
+            base 143 181 115
+            background 0
+            emphasis_0 87 165 229
+            emphasis_1 35 35 38
+            emphasis_2 187 112 210
+            emphasis_3 87 165 229
+        }
+        exit_code_error {
+            base 222 93 104
+            background 0
+            emphasis_0 219 182 113
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+        multiplayer_user_colors {
+            player_1 187 112 210
+            player_2 87 165 229
+            player_3 0
+            player_4 219 182 113
+            player_5 87 165 229
+            player_6 0
+            player_7 222 93 104
+            player_8 0
+            player_9 0
+            player_10 0
+        }
     }
 }
-theme "kanagawa-dragon"
+theme "onedark-warmer"
  
 // Choose the base input mode of zellij.
 // Default: normal

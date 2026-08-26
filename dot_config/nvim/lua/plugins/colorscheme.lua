@@ -1,20 +1,20 @@
 return {
-  -- One Dark (warmer) — active colorscheme. Matches the kitty onedark-warmer theme.
-  -- Transparency lets kitty's background show through.
+  -- One Dark (warmer) — navarasu/onedark.nvim.
+  -- transparent preserves kitty background_blur passthrough.
   {
     "navarasu/onedark.nvim",
     lazy = false,
     priority = 1000,
     opts = {
-      style = "warmer",      -- darkest warm variant
+      style = "warmer",
       transparent = true,
       term_colors = true,
-      code_style = {
-        comments = "italic",
-        keywords = "italic",
-      },
+      lualine = { transparent = true },
     },
   },
+
+  -- Disable LazyVim's bundled tokyonight so it is fully uninstalled.
+  { "folke/tokyonight.nvim", enabled = false },
 
   -- Set onedark as the active colorscheme.
   {

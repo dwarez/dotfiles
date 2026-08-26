@@ -5,74 +5,24 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
--- Gruvbox Dark color scheme
+-- One Dark (warmer) — navarasu/onedark.nvim palette.
 config.colors = {
-	foreground = "#ebdbb2",
-	background = "#282828",
-	cursor_bg = "#ebdbb2",
-	cursor_fg = "#282828",
-	cursor_border = "#ebdbb2",
-	selection_fg = "#282828",
-	selection_bg = "#ebdbb2",
-	scrollbar_thumb = "#504945",
-	split = "#504945",
-
-	ansi = {
-		"#282828", -- black
-		"#cc241d", -- red
-		"#98971a", -- green
-		"#d79921", -- yellow
-		"#458588", -- blue
-		"#b16286", -- magenta
-		"#689d6a", -- cyan
-		"#a89984", -- white
-	},
-
-	brights = {
-		"#928374", -- bright black
-		"#fb4934", -- bright red
-		"#b8bb26", -- bright green
-		"#fabd2f", -- bright yellow
-		"#83a598", -- bright blue
-		"#d3869b", -- bright magenta
-		"#8ec07c", -- bright cyan
-		"#ebdbb2", -- bright white
-	},
-
-	indexed = {
-		[16] = "#fe8019",
-		[17] = "#d65d0e",
-	},
-
-	-- Tab bar colors
+	foreground = "#a7aab0",
+	background = "#232326",
+	cursor_bg = "#a7aab0",
+	cursor_fg = "#232326",
+	cursor_border = "#a7aab0",
+	selection_fg = "#a7aab0",
+	selection_bg = "#37383d",
+	ansi = { "#101012", "#de5d68", "#8fb573", "#dbb671", "#57a5e5", "#bb70d2", "#51a8b3", "#a7aab0" },
+	brights = { "#5c6370", "#e86671", "#98c379", "#e5c07b", "#61afef", "#c678dd", "#56b6c2", "#abb2bf" },
 	tab_bar = {
-		background = "#1d2021",
-		active_tab = {
-			bg_color = "#282828",
-			fg_color = "#ebdbb2",
-			intensity = "Normal",
-			underline = "None",
-			italic = false,
-			strikethrough = false,
-		},
-		inactive_tab = {
-			bg_color = "#3c3836",
-			fg_color = "#a89984",
-		},
-		inactive_tab_hover = {
-			bg_color = "#504945",
-			fg_color = "#ebdbb2",
-			italic = true,
-		},
-		new_tab = {
-			bg_color = "#3c3836",
-			fg_color = "#a89984",
-		},
-		new_tab_hover = {
-			bg_color = "#504945",
-			fg_color = "#ebdbb2",
-			italic = true,
-		},
+		background = "#1b1c1e",
+		active_tab = { bg_color = "#a7aab0", fg_color = "#232326" },
+		inactive_tab = { bg_color = "#2c2d31", fg_color = "#818387" },
+		inactive_tab_hover = { bg_color = "#35363b", fg_color = "#a7aab0" },
+		new_tab = { bg_color = "#2c2d31", fg_color = "#818387" },
+		new_tab_hover = { bg_color = "#35363b", fg_color = "#a7aab0" },
 	},
 }
 

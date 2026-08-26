@@ -36,7 +36,7 @@ lua/options.lua          vim.opt / vim.g
 lua/keymaps.lua          global maps
 lua/plugins.lua          single vim.pack.add call + requires
 lua/plugins/
-  colorscheme.lua        kanagawa-dragon
+  colorscheme.lua        onedark (warmer)
   treesitter.lua         nvim-treesitter (main branch rewrite)
   lsp.lua                vim.lsp.config / vim.lsp.enable
   blink.lua              blink.cmp (matches old keymap)

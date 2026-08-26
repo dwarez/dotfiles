@@ -1,15 +1,11 @@
-require("kanagawa").setup({
-  compile = true,
-  undercurl = true,
-  commentStyle = { italic = true },
-  keywordStyle = { italic = true },
-  statementStyle = { bold = true },
-  terminalColors = true,
-  theme = "dragon",
-  background = {
-    dark = "dragon",
-    light = "lotus",
+require("onedark").setup({
+  style = "warmer",
+  term_colors = true,
+  code_style = {
+    comments = "italic",
+    keywords = "italic",
   },
+  lualine = { transparent = false },
 })
 
-vim.cmd.colorscheme("kanagawa-dragon")
+vim.cmd.colorscheme("onedark")
