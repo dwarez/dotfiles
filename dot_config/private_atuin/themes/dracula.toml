@@ -1,0 +1,26 @@
+# Dracula theme for atuin (official palette values).
+# Keys are the full color set atuin 18.19.0 accepts (crates/atuin-client/src/theme.rs).
+# Note: there is no "Highlight" key in this version — including one makes the
+# whole theme fail to deserialize and atuin silently renders unstyled.
+# AlertInfo/Warn/Error use cyan/yellow/red (29.0 / 40.9 / 20.9 CIEDE2000 apart),
+# never green, which is the one confusable Dracula colour.
+
+[theme]
+name = "dracula"
+
+[colors]
+Base = "#f8f8f2"            # fg
+Title = "#bd93f9"           # purple
+Important = "#ffb86c"       # orange
+Guidance = "#ff79c6"        # pink
+Annotation = "#6272a4"      # comment blue-grey
+Muted = "#6272a4"            # comment blue-grey
+AlertInfo = "#8be9fd"        # cyan
+AlertWarn = "#f1fa8c"        # yellow
+AlertError = "#ff5555"       # red
+SyntaxCommand = "#8be9fd"   # cyan — function
+SyntaxFlag = "#ff79c6"      # pink — keyword
+SyntaxString = "#f1fa8c"    # yellow — string
+SyntaxVariable = "#ffb86c"  # orange — identifier
+SyntaxOperator = "#ff79c6"  # pink — operator
+SyntaxComment = "#6272a4"   # comment

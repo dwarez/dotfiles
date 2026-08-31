@@ -1,22 +1,23 @@
--- Statusline built from the Vesper palette. vesper.nvim's own lualine theme
--- reuses one colour for command/terminal/visual, so the mode table is explicit.
+-- Statusline built from the official Dracula palette. lualine bundles its own
+-- `dracula` theme which would shadow the plugin's, so the mode table is
+-- explicit; it also matches the tmux pills.
 require("lualine").setup({
   options = {
     theme = {
       normal = {
-        a = { fg = "#101010", bg = "#ffc799", gui = "bold" },
-        b = { fg = "#ffffff", bg = "#343434" },
-        c = { fg = "#ffffff", bg = "#161616" },
+        a = { fg = "#282a36", bg = "#bd93f9", gui = "bold" },
+        b = { fg = "#f8f8f2", bg = "#44475a" },
+        c = { fg = "#f8f8f2", bg = "#21222c" },
       },
-      insert   = { a = { fg = "#101010", bg = "#99ffe4", gui = "bold" } },
-      visual   = { a = { fg = "#101010", bg = "#66cbb2", gui = "bold" } },
-      replace  = { a = { fg = "#101010", bg = "#ff8080", gui = "bold" } },
-      command  = { a = { fg = "#101010", bg = "#a0a0a0", gui = "bold" } },
-      terminal = { a = { fg = "#101010", bg = "#74828d", gui = "bold" } },
+      insert   = { a = { fg = "#282a36", bg = "#8be9fd", gui = "bold" } },
+      visual   = { a = { fg = "#282a36", bg = "#ff79c6", gui = "bold" } },
+      replace  = { a = { fg = "#282a36", bg = "#ff5555", gui = "bold" } },
+      command  = { a = { fg = "#282a36", bg = "#f1fa8c", gui = "bold" } },
+      terminal = { a = { fg = "#282a36", bg = "#ffb86c", gui = "bold" } },
       inactive = {
-        a = { fg = "#707070", bg = "#161616", gui = "bold" },
-        b = { fg = "#707070", bg = "#161616" },
-        c = { fg = "#707070", bg = "#161616" },
+        a = { fg = "#6272a4", bg = "#21222c", gui = "bold" },
+        b = { fg = "#6272a4", bg = "#21222c" },
+        c = { fg = "#6272a4", bg = "#21222c" },
       },
     },
     globalstatus = true,

@@ -17,6 +17,10 @@
       "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
       "src": "https://github.com/stevearc/conform.nvim"
     },
+    "dracula.nvim": {
+      "rev": "ae752c13e95fb7c5f58da4b5123cb804ea7568ee",
+      "src": "https://github.com/Mofiqul/dracula.nvim"
+    },
     "flash.nvim": {
       "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
       "src": "https://github.com/folke/flash.nvim"
@@ -85,10 +89,6 @@
     "venv-selector.nvim": {
       "rev": "bcb2f58533c59b01565285eba49693f00bc460f5",
       "src": "https://github.com/linux-cultist/venv-selector.nvim"
-    },
-    "vesper.nvim": {
-      "rev": "1717b1ad657c94bec3fc2bdebb0c55452d9fe46d",
-      "src": "https://github.com/datsfilipe/vesper.nvim"
     },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",

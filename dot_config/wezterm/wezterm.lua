@@ -5,24 +5,24 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
--- Vesper — minimal near-black. Palette: raunofreiberg/vesper.
+-- Dracula — official palette (dracula/kitty), verbatim.
 config.colors = {
-	foreground = "#ffffff",
-	background = "#101010",
-	cursor_bg = "#ffc799",
-	cursor_fg = "#101010",
-	cursor_border = "#ffc799",
+	foreground = "#f8f8f2",
+	background = "#282a36",
+	cursor_bg = "#f8f8f2",
+	cursor_fg = "#282a36",
+	cursor_border = "#f8f8f2",
 	selection_fg = "#ffffff",
-	selection_bg = "#343434",
-	ansi = { "#343434", "#ff8080", "#99ffe4", "#ffc799", "#74828d", "#a8774d", "#66cbb2", "#a0a0a0" },
-	brights = { "#707070", "#ff9c9c", "#c2ffef", "#ffdabc", "#939ea6", "#bb9574", "#9addcc", "#ffffff" },
+	selection_bg = "#44475a",
+	ansi = { "#21222c", "#ff5555", "#50fa7b", "#f1fa8c", "#bd93f9", "#ff79c6", "#8be9fd", "#f8f8f2" },
+	brights = { "#6272a4", "#ff6e6e", "#69ff94", "#ffffa5", "#d6acff", "#ff92df", "#a4ffff", "#ffffff" },
 	tab_bar = {
-		background = "#161616",
-		active_tab = { bg_color = "#ffc799", fg_color = "#101010" },
-		inactive_tab = { bg_color = "#161616", fg_color = "#a0a0a0" },
-		inactive_tab_hover = { bg_color = "#232323", fg_color = "#ffffff" },
-		new_tab = { bg_color = "#161616", fg_color = "#a0a0a0" },
-		new_tab_hover = { bg_color = "#232323", fg_color = "#ffffff" },
+		background = "#21222c",
+		active_tab = { bg_color = "#f8f8f2", fg_color = "#282a36" },
+		inactive_tab = { bg_color = "#6272a4", fg_color = "#282a36" },
+		inactive_tab_hover = { bg_color = "#44475a", fg_color = "#f8f8f2" },
+		new_tab = { bg_color = "#6272a4", fg_color = "#282a36" },
+		new_tab_hover = { bg_color = "#44475a", fg_color = "#f8f8f2" },
 	},
 }
 
