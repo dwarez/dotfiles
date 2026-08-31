@@ -37,10 +37,6 @@
       "rev": "418ef4930ddabe80f449c6f1323f8b6abb172d1c",
       "src": "https://github.com/echasnovski/mini.nvim"
     },
-    "modus-themes.nvim": {
-      "rev": "56233f0986ef6c8d0eab97e924e87144e584d970",
-      "src": "https://github.com/miikanissi/modus-themes.nvim"
-    },
     "neo-tree.nvim": {
       "rev": "4d0828d95adaf4250c1373d2cd9318d3509712b7",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim"
@@ -89,6 +85,10 @@
     "venv-selector.nvim": {
       "rev": "bcb2f58533c59b01565285eba49693f00bc460f5",
       "src": "https://github.com/linux-cultist/venv-selector.nvim"
+    },
+    "vesper.nvim": {
+      "rev": "1717b1ad657c94bec3fc2bdebb0c55452d9fe46d",
+      "src": "https://github.com/datsfilipe/vesper.nvim"
     },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",

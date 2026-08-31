@@ -8,15 +8,15 @@
 # Default scheme — matches noctalia's "content"-style generation.
 default_scheme = "scheme-content"
 
-# tmux, kitty, and starship all use hand-authored static Modus (deuteranopia) themes,
+# tmux, kitty, and starship all use hand-authored static Vesper themes,
 # decoupled from matugen. The respective matugen-template.* files are kept
 # on disk as a trivial revert path but no longer wired in.
 #
-#   tmux:     ~/.config/tmux/modus.conf           (sourced by tmux.conf)
+#   tmux:     ~/.config/tmux/vesper.conf          (sourced by tmux.conf)
 #   kitty:    ~/.config/kitty/current-theme.conf  (included by kitty.conf)
 #   starship: ~/.config/starship.toml             (static)
 #
-# nvim uses the modus-themes.nvim colorscheme plugin, not matugen — intentionally
+# nvim uses the vesper.nvim colorscheme plugin, not matugen — intentionally
 # left out so the editor keeps fully saturated, distinguishable syntax colours.
 #
 # To revert to matugen-driven theming: restore the [templates.*] blocks below
