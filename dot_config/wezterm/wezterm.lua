@@ -5,24 +5,24 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
--- Dracula — official palette (dracula/kitty), verbatim.
+-- One Dark (warmer) — navarasu/onedark.nvim palette.
 config.colors = {
-	foreground = "#f8f8f2",
-	background = "#282a36",
-	cursor_bg = "#f8f8f2",
-	cursor_fg = "#282a36",
-	cursor_border = "#f8f8f2",
-	selection_fg = "#ffffff",
-	selection_bg = "#44475a",
-	ansi = { "#21222c", "#ff5555", "#50fa7b", "#f1fa8c", "#bd93f9", "#ff79c6", "#8be9fd", "#f8f8f2" },
-	brights = { "#6272a4", "#ff6e6e", "#69ff94", "#ffffa5", "#d6acff", "#ff92df", "#a4ffff", "#ffffff" },
+	foreground = "#a7aab0",
+	background = "#232326",
+	cursor_bg = "#a7aab0",
+	cursor_fg = "#232326",
+	cursor_border = "#a7aab0",
+	selection_fg = "#a7aab0",
+	selection_bg = "#37383d",
+	ansi = { "#101012", "#de5d68", "#8fb573", "#dbb671", "#57a5e5", "#bb70d2", "#51a8b3", "#a7aab0" },
+	brights = { "#5c6370", "#e86671", "#98c379", "#e5c07b", "#61afef", "#c678dd", "#56b6c2", "#abb2bf" },
 	tab_bar = {
-		background = "#21222c",
-		active_tab = { bg_color = "#f8f8f2", fg_color = "#282a36" },
-		inactive_tab = { bg_color = "#6272a4", fg_color = "#282a36" },
-		inactive_tab_hover = { bg_color = "#44475a", fg_color = "#f8f8f2" },
-		new_tab = { bg_color = "#6272a4", fg_color = "#282a36" },
-		new_tab_hover = { bg_color = "#44475a", fg_color = "#f8f8f2" },
+		background = "#1b1c1e",
+		active_tab = { bg_color = "#a7aab0", fg_color = "#232326" },
+		inactive_tab = { bg_color = "#2c2d31", fg_color = "#818387" },
+		inactive_tab_hover = { bg_color = "#35363b", fg_color = "#a7aab0" },
+		new_tab = { bg_color = "#2c2d31", fg_color = "#818387" },
+		new_tab_hover = { bg_color = "#35363b", fg_color = "#a7aab0" },
 	},
 }
 

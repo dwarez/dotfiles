@@ -228,126 +228,126 @@ simplified_ui true
 // Default: default
 // 
 themes {
-    dracula {
+    onedark-warmer {
         text_unselected {
-            base 248 248 242
-            background 40 42 54
-            emphasis_0 189 147 249
-            emphasis_1 139 233 253
-            emphasis_2 189 147 249
-            emphasis_3 255 121 198
+            base 167 170 176
+            background 35 35 38
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
         }
         text_selected {
-            base 40 42 54
-            background 189 147 249
-            emphasis_0 189 147 249
-            emphasis_1 139 233 253
-            emphasis_2 189 147 249
-            emphasis_3 255 121 198
+            base 35 35 38
+            background 143 181 115
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
         }
         ribbon_selected {
-            base 40 42 54
-            background 189 147 249
-            emphasis_0 255 85 85
-            emphasis_1 189 147 249
-            emphasis_2 255 121 198
-            emphasis_3 139 233 253
+            base 35 35 38
+            background 143 181 115
+            emphasis_0 222 93 104
+            emphasis_1 196 144 96
+            emphasis_2 187 112 210
+            emphasis_3 87 165 229
         }
         ribbon_unselected {
-            base 40 42 54
-            background 248 248 242
-            emphasis_0 255 85 85
-            emphasis_1 248 248 242
-            emphasis_2 139 233 253
-            emphasis_3 255 121 198
+            base 35 35 38
+            background 167 170 176
+            emphasis_0 222 93 104
+            emphasis_1 167 170 176
+            emphasis_2 87 165 229
+            emphasis_3 187 112 210
         }
         table_title {
-            base 189 147 249
+            base 143 181 115
             background 0
-            emphasis_0 189 147 249
-            emphasis_1 139 233 253
-            emphasis_2 189 147 249
-            emphasis_3 255 121 198
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
         }
         table_cell_selected {
-            base 40 42 54
-            background 189 147 249
-            emphasis_0 189 147 249
-            emphasis_1 139 233 253
-            emphasis_2 189 147 249
-            emphasis_3 255 121 198
+            base 35 35 38
+            background 143 181 115
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
         }
         table_cell_unselected {
-            base 248 248 242
-            background 40 42 54
-            emphasis_0 189 147 249
-            emphasis_1 139 233 253
-            emphasis_2 189 147 249
-            emphasis_3 255 121 198
+            base 167 170 176
+            background 35 35 38
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
         }
         list_selected {
-            base 40 42 54
-            background 189 147 249
-            emphasis_0 189 147 249
-            emphasis_1 139 233 253
-            emphasis_2 189 147 249
-            emphasis_3 255 121 198
+            base 35 35 38
+            background 143 181 115
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
         }
         list_unselected {
-            base 248 248 242
-            background 40 42 54
-            emphasis_0 189 147 249
-            emphasis_1 139 233 253
-            emphasis_2 189 147 249
-            emphasis_3 255 121 198
+            base 167 170 176
+            background 35 35 38
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 143 181 115
+            emphasis_3 187 112 210
         }
         frame_selected {
-            base 189 147 249
+            base 143 181 115
             background 0
-            emphasis_0 189 147 249
-            emphasis_1 139 233 253
-            emphasis_2 255 121 198
+            emphasis_0 196 144 96
+            emphasis_1 87 165 229
+            emphasis_2 187 112 210
             emphasis_3 0
         }
         frame_highlight {
-            base 189 147 249
+            base 196 144 96
             background 0
-            emphasis_0 255 121 198
-            emphasis_1 189 147 249
-            emphasis_2 189 147 249
-            emphasis_3 189 147 249
+            emphasis_0 187 112 210
+            emphasis_1 196 144 96
+            emphasis_2 196 144 96
+            emphasis_3 196 144 96
         }
         exit_code_success {
-            base 189 147 249
+            base 143 181 115
             background 0
-            emphasis_0 139 233 253
-            emphasis_1 40 42 54
-            emphasis_2 255 121 198
-            emphasis_3 139 233 253
+            emphasis_0 87 165 229
+            emphasis_1 35 35 38
+            emphasis_2 187 112 210
+            emphasis_3 87 165 229
         }
         exit_code_error {
-            base 255 85 85
+            base 222 93 104
             background 0
-            emphasis_0 139 233 253
+            emphasis_0 219 182 113
             emphasis_1 0
             emphasis_2 0
             emphasis_3 0
         }
         multiplayer_user_colors {
-            player_1 255 121 198
-            player_2 139 233 253
+            player_1 187 112 210
+            player_2 87 165 229
             player_3 0
-            player_4 139 233 253
-            player_5 139 233 253
+            player_4 219 182 113
+            player_5 87 165 229
             player_6 0
-            player_7 255 85 85
+            player_7 222 93 104
             player_8 0
             player_9 0
             player_10 0
         }
     }
 }
-theme "dracula"
+theme "onedark-warmer"
  
 // Choose the base input mode of zellij.
 // Default: normal

@@ -3,7 +3,7 @@
 
 vim.pack.add({
   -- Colorscheme
-  { src = "https://github.com/Mofiqul/dracula.nvim" },
+  { src = "https://github.com/navarasu/onedark.nvim" },
 
   -- Treesitter (main branch: full rewrite for nvim 0.12)
   { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },

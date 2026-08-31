@@ -4,5 +4,5 @@
 
 -- Disable automatic completion popup
 vim.opt.completeopt = "menu,menuone,noselect"
--- (colorscheme settings managed by plugins/colorscheme.lua — dracula)
+-- (colorscheme settings managed by plugins/colorscheme.lua — onedark warmer)
 vim.o.background = "dark"
