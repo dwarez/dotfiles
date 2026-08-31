@@ -1,35 +1,24 @@
--- Statusline theme, built from onedark's warmer palette.
---
--- Two reasons this is explicit rather than `theme = "onedark"`:
---   1. lualine.nvim bundles its OWN lua/lualine/themes/onedark.lua (standard
---      One Dark: bg #282c34, green #98c379) and sits earlier in runtimepath,
---      so a plain require would silently pick the non-warmer palette.
---   2. onedark.nvim's bundled lualine theme paints NORMAL mode green, the only
---      green accent in an otherwise blue stack (tmux session/window pills,
---      kitty active tab, starship OS band, pane borders). Normal mode is blue
---      here so the statusline reads as part of the same theme.
---
--- Requires plugins.colorscheme to have run first (plugins.lua orders it that
--- way) so that onedark.colors resolves the warmer palette.
-local c = require("onedark.colors")
-
+-- Statusline built from the Modus (deuteranopia) palette.
+-- Modus ships no lualine theme, so the mode table is explicit. NORMAL uses
+-- warning-yellow (L*92, 15.2:1) to match the tmux session pill; modes are
+-- spread across the palette's lightness ladder rather than by hue alone.
 require("lualine").setup({
   options = {
     theme = {
       normal = {
-        a = { fg = c.bg0, bg = c.blue, gui = "bold" },
-        b = { fg = c.fg, bg = c.bg3 },
-        c = { fg = c.fg, bg = c.bg1 },
+        a = { fg = "#121212", bg = "#efef00", gui = "bold" },
+        b = { fg = "#ffffff", bg = "#3a3a4a" },
+        c = { fg = "#ffffff", bg = "#1c1c1c" },
       },
-      insert = { a = { fg = c.bg0, bg = c.green, gui = "bold" } },
-      visual = { a = { fg = c.bg0, bg = c.purple, gui = "bold" } },
-      replace = { a = { fg = c.bg0, bg = c.red, gui = "bold" } },
-      command = { a = { fg = c.bg0, bg = c.yellow, gui = "bold" } },
-      terminal = { a = { fg = c.bg0, bg = c.cyan, gui = "bold" } },
+      insert   = { a = { fg = "#121212", bg = "#00d3d0", gui = "bold" } },
+      visual   = { a = { fg = "#121212", bg = "#c4d5ff", gui = "bold" } },
+      replace  = { a = { fg = "#121212", bg = "#ff5f59", gui = "bold" } },
+      command  = { a = { fg = "#121212", bg = "#ffa00f", gui = "bold" } },
+      terminal = { a = { fg = "#121212", bg = "#79a8ff", gui = "bold" } },
       inactive = {
-        a = { fg = c.grey, bg = c.bg1, gui = "bold" },
-        b = { fg = c.grey, bg = c.bg1 },
-        c = { fg = c.grey, bg = c.bg1 },
+        a = { fg = "#989898", bg = "#1c1c1c", gui = "bold" },
+        b = { fg = "#989898", bg = "#1c1c1c" },
+        c = { fg = "#989898", bg = "#1c1c1c" },
       },
     },
     globalstatus = true,

@@ -5,24 +5,24 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
--- One Dark (warmer) — navarasu/onedark.nvim palette.
+-- Modus vivendi (deuteranopia) — accessibility-first, bg lowered to #121212.
 config.colors = {
-	foreground = "#a7aab0",
-	background = "#232326",
-	cursor_bg = "#a7aab0",
-	cursor_fg = "#232326",
-	cursor_border = "#a7aab0",
-	selection_fg = "#a7aab0",
-	selection_bg = "#37383d",
-	ansi = { "#101012", "#de5d68", "#8fb573", "#dbb671", "#57a5e5", "#bb70d2", "#51a8b3", "#a7aab0" },
-	brights = { "#5c6370", "#e86671", "#98c379", "#e5c07b", "#61afef", "#c678dd", "#56b6c2", "#abb2bf" },
+	foreground = "#ffffff",
+	background = "#121212",
+	cursor_bg = "#efef00",
+	cursor_fg = "#121212",
+	cursor_border = "#efef00",
+	selection_fg = "#ffffff",
+	selection_bg = "#3a3a4a",
+	ansi = { "#000000", "#ff5f59", "#44bc44", "#cabf00", "#2fafff", "#feacd0", "#00d3d0", "#a6a6a6" },
+	brights = { "#595959", "#ff6b55", "#00c06f", "#efef00", "#79a8ff", "#f78fe7", "#6ae4b9", "#ffffff" },
 	tab_bar = {
-		background = "#1b1c1e",
-		active_tab = { bg_color = "#a7aab0", fg_color = "#232326" },
-		inactive_tab = { bg_color = "#2c2d31", fg_color = "#818387" },
-		inactive_tab_hover = { bg_color = "#35363b", fg_color = "#a7aab0" },
-		new_tab = { bg_color = "#2c2d31", fg_color = "#818387" },
-		new_tab_hover = { bg_color = "#35363b", fg_color = "#a7aab0" },
+		background = "#1c1c1c",
+		active_tab = { bg_color = "#efef00", fg_color = "#121212" },
+		inactive_tab = { bg_color = "#1c1c1c", fg_color = "#989898" },
+		inactive_tab_hover = { bg_color = "#242424", fg_color = "#ffffff" },
+		new_tab = { bg_color = "#1c1c1c", fg_color = "#989898" },
+		new_tab_hover = { bg_color = "#242424", fg_color = "#ffffff" },
 	},
 }
 

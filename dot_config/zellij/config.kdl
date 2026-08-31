@@ -228,126 +228,126 @@ simplified_ui true
 // Default: default
 // 
 themes {
-    onedark-warmer {
+    modus {
         text_unselected {
-            base 167 170 176
-            background 35 35 38
-            emphasis_0 196 144 96
-            emphasis_1 87 165 229
-            emphasis_2 143 181 115
-            emphasis_3 187 112 210
+            base 255 255 255
+            background 18 18 18
+            emphasis_0 255 160 15
+            emphasis_1 121 168 255
+            emphasis_2 239 239 0
+            emphasis_3 196 213 255
         }
         text_selected {
-            base 35 35 38
-            background 143 181 115
-            emphasis_0 196 144 96
-            emphasis_1 87 165 229
-            emphasis_2 143 181 115
-            emphasis_3 187 112 210
+            base 18 18 18
+            background 239 239 0
+            emphasis_0 255 160 15
+            emphasis_1 121 168 255
+            emphasis_2 239 239 0
+            emphasis_3 196 213 255
         }
         ribbon_selected {
-            base 35 35 38
-            background 143 181 115
-            emphasis_0 222 93 104
-            emphasis_1 196 144 96
-            emphasis_2 187 112 210
-            emphasis_3 87 165 229
+            base 18 18 18
+            background 239 239 0
+            emphasis_0 255 95 89
+            emphasis_1 255 160 15
+            emphasis_2 196 213 255
+            emphasis_3 121 168 255
         }
         ribbon_unselected {
-            base 35 35 38
-            background 167 170 176
-            emphasis_0 222 93 104
-            emphasis_1 167 170 176
-            emphasis_2 87 165 229
-            emphasis_3 187 112 210
+            base 18 18 18
+            background 255 255 255
+            emphasis_0 255 95 89
+            emphasis_1 255 255 255
+            emphasis_2 121 168 255
+            emphasis_3 196 213 255
         }
         table_title {
-            base 143 181 115
+            base 239 239 0
             background 0
-            emphasis_0 196 144 96
-            emphasis_1 87 165 229
-            emphasis_2 143 181 115
-            emphasis_3 187 112 210
+            emphasis_0 255 160 15
+            emphasis_1 121 168 255
+            emphasis_2 239 239 0
+            emphasis_3 196 213 255
         }
         table_cell_selected {
-            base 35 35 38
-            background 143 181 115
-            emphasis_0 196 144 96
-            emphasis_1 87 165 229
-            emphasis_2 143 181 115
-            emphasis_3 187 112 210
+            base 18 18 18
+            background 239 239 0
+            emphasis_0 255 160 15
+            emphasis_1 121 168 255
+            emphasis_2 239 239 0
+            emphasis_3 196 213 255
         }
         table_cell_unselected {
-            base 167 170 176
-            background 35 35 38
-            emphasis_0 196 144 96
-            emphasis_1 87 165 229
-            emphasis_2 143 181 115
-            emphasis_3 187 112 210
+            base 255 255 255
+            background 18 18 18
+            emphasis_0 255 160 15
+            emphasis_1 121 168 255
+            emphasis_2 239 239 0
+            emphasis_3 196 213 255
         }
         list_selected {
-            base 35 35 38
-            background 143 181 115
-            emphasis_0 196 144 96
-            emphasis_1 87 165 229
-            emphasis_2 143 181 115
-            emphasis_3 187 112 210
+            base 18 18 18
+            background 239 239 0
+            emphasis_0 255 160 15
+            emphasis_1 121 168 255
+            emphasis_2 239 239 0
+            emphasis_3 196 213 255
         }
         list_unselected {
-            base 167 170 176
-            background 35 35 38
-            emphasis_0 196 144 96
-            emphasis_1 87 165 229
-            emphasis_2 143 181 115
-            emphasis_3 187 112 210
+            base 255 255 255
+            background 18 18 18
+            emphasis_0 255 160 15
+            emphasis_1 121 168 255
+            emphasis_2 239 239 0
+            emphasis_3 196 213 255
         }
         frame_selected {
-            base 143 181 115
+            base 239 239 0
             background 0
-            emphasis_0 196 144 96
-            emphasis_1 87 165 229
-            emphasis_2 187 112 210
+            emphasis_0 255 160 15
+            emphasis_1 121 168 255
+            emphasis_2 196 213 255
             emphasis_3 0
         }
         frame_highlight {
-            base 196 144 96
+            base 255 160 15
             background 0
-            emphasis_0 187 112 210
-            emphasis_1 196 144 96
-            emphasis_2 196 144 96
-            emphasis_3 196 144 96
+            emphasis_0 196 213 255
+            emphasis_1 255 160 15
+            emphasis_2 255 160 15
+            emphasis_3 255 160 15
         }
         exit_code_success {
-            base 143 181 115
+            base 239 239 0
             background 0
-            emphasis_0 87 165 229
-            emphasis_1 35 35 38
-            emphasis_2 187 112 210
-            emphasis_3 87 165 229
+            emphasis_0 121 168 255
+            emphasis_1 18 18 18
+            emphasis_2 196 213 255
+            emphasis_3 121 168 255
         }
         exit_code_error {
-            base 222 93 104
+            base 255 95 89
             background 0
-            emphasis_0 219 182 113
+            emphasis_0 0 211 208
             emphasis_1 0
             emphasis_2 0
             emphasis_3 0
         }
         multiplayer_user_colors {
-            player_1 187 112 210
-            player_2 87 165 229
+            player_1 196 213 255
+            player_2 121 168 255
             player_3 0
-            player_4 219 182 113
-            player_5 87 165 229
+            player_4 0 211 208
+            player_5 121 168 255
             player_6 0
-            player_7 222 93 104
+            player_7 255 95 89
             player_8 0
             player_9 0
             player_10 0
         }
     }
 }
-theme "onedark-warmer"
+theme "modus"
  
 // Choose the base input mode of zellij.
 // Default: normal
