@@ -36,7 +36,3 @@ o.confirm = true
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
--- colorscheme prefs (picked up by colorscheme plugin)
-vim.g.gruvbox_material_background = "medium"
-vim.g.gruvbox_material_foreground = "material"

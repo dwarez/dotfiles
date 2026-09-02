@@ -25,6 +25,9 @@ return {
         -- ignored = true searches .gitignore'd paths too; exclude list keeps the noise out
         grep = { hidden = true, ignored = true, exclude = exclude },
         files = { hidden = true, ignored = true, exclude = exclude },
+        -- Explorer (<leader>e): show everything, including dotfiles and gitignored paths.
+        -- No exclude list here: the point is seeing what's on disk.
+        explorer = { hidden = true, ignored = true, exclude = { ".git" } },
       },
     },
   },

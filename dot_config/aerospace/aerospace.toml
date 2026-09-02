@@ -1,7 +1,7 @@
 # AeroSpace config
 
 after-startup-command = [
-    'exec-and-forget borders active_color=0xddd4d4d4 inactive_color=0x33d4d4d4 width=4.0 style=round',
+    'exec-and-forget borders active_color=0xdd8ba4b0 inactive_color=0x33625e5a width=4.0 style=round',
     'exec-and-forget open -a "Easy Move+Resize"',
 ]
 
