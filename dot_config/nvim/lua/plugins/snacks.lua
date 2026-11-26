@@ -15,7 +15,7 @@ local exclude = {
 return {
   "folke/snacks.nvim",
   -- LazyVim's snacks_picker extra binds <leader>gd to Snacks.picker.git_diff (hunks);
-  -- disable it so diffview.lua owns <leader>gd everywhere (not just the dashboard).
+  -- disable it so codediff.lua owns <leader>gd everywhere (not just the dashboard).
   keys = {
     { "<leader>gd", false },
   },

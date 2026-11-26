@@ -5,10 +5,6 @@ if status is-interactive
     # ── Vim mode on the command line ──
     fish_vi_key_bindings
 
-    # ── Autosuggestions ──
-    # fish's default #555 is unreadable on dark themes
-    set -g fish_color_autosuggestion 7f8c9a  # readable on dark bgs; brblack breaks when a theme sets color8 ≈ background (noctalia One Dark)
-
     # ── Prompt & tools ──
     starship init fish | source
     zoxide init fish | source # z <dir> jumping
@@ -48,6 +44,7 @@ end
 # ── Environment & PATH (also for non-interactive shells) ──
 set -gx EDITOR nvim
 set -gx VISUAL nvim
+set -gx AWS_PROFILE HF-Sandbox-access-754289655784
 fish_add_path $HOME/.local/bin $HOME/.cargo/bin /opt/homebrew/bin /opt/homebrew/sbin
 
 # cx: cd into a directory and immediately list it

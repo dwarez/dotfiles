@@ -1,74 +1,4 @@
 {
-  "model": "opus",
-  "enabledPlugins": {
-    "ponytail@ponytail": true
-  },
-  "extraKnownMarketplaces": {
-    "ponytail": {
-      "source": {
-        "source": "github",
-        "repo": "DietrichGebert/ponytail"
-      }
-    }
-  },
-  "theme": "auto",
-  "effortLevel": "xhigh",
-  "hooks": {
-    "PreToolUse": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/opt/homebrew/bin/tokensave",
-            "args": [
-              "hook-pre-tool-use"
-            ]
-          }
-        ],
-        "matcher": "Agent|Grep|Bash"
-      }
-    ],
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/opt/homebrew/bin/tokensave",
-            "args": [
-              "hook-prompt-submit"
-            ]
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/opt/homebrew/bin/tokensave",
-            "args": [
-              "hook-stop"
-            ]
-          },
-          {
-            "type": "command",
-            "command": "osascript -e 'display notification \"Finished — your turn\" with title \"Claude Code\" sound name \"Glass\"'"
-          }
-        ]
-      }
-    ],
-    "Notification": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "msg=$(jq -r '.message // \"\"'); case \"$msg\" in *\"waiting for\"*\"input\"*) exit 0 ;; esac; osascript -e 'on run argv' -e 'display notification (item 1 of argv) with title \"Claude Code\" sound name \"Glass\"' -e 'end run' \"$msg\""
-          }
-        ]
-      }
-    ]
-  },
   "permissions": {
     "allow": [
       "mcp__tokensave__tokensave_affected",
@@ -153,5 +83,76 @@
       "mcp__tokensave__tokensave_unsafe_patterns",
       "mcp__tokensave__tokensave_unused_imports"
     ]
-  }
+  },
+  "model": "opus[1m]",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Agent|Grep|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/tokensave",
+            "args": [
+              "hook-pre-tool-use"
+            ]
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/tokensave",
+            "args": [
+              "hook-prompt-submit"
+            ]
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/tokensave",
+            "args": [
+              "hook-stop"
+            ]
+          },
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"Finished — your turn\" with title \"Claude Code\" sound name \"Glass\"'"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "msg=$(jq -r '.message // \"\"'); case \"$msg\" in *\"waiting for\"*\"input\"*) exit 0 ;; esac; osascript -e 'on run argv' -e 'display notification (item 1 of argv) with title \"Claude Code\" sound name \"Glass\"' -e 'end run' \"$msg\""
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "ponytail@ponytail": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    }
+  },
+  "effortLevel": "xhigh",
+  "theme": "auto"
 }

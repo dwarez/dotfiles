@@ -9,3 +9,15 @@
 
 vim.g.autoformat = false
 vim.diagnostic.enable(false)
+
+local function set_snacks_picker_highlights()
+  vim.api.nvim_set_hl(0, "SnacksPickerListCursorLine", { link = "CursorLine" })
+  vim.api.nvim_set_hl(0, "SnacksPickerPreviewCursorLine", { link = "CursorLine" })
+end
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  group = vim.api.nvim_create_augroup("snacks_picker_highlights", { clear = true }),
+  callback = set_snacks_picker_highlights,
+})
+
+set_snacks_picker_highlights()

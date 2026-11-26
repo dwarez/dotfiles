@@ -4,6 +4,7 @@ return {
   opts = {
     spec = {
       { "<leader>ue", desc = "Toggle Diagnostics (buffer)", icon = { icon = "", color = "yellow" } },
+      { "<leader>a", group = "popagent", mode = { "n", "x" } },
     },
   },
 }
